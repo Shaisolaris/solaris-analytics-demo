@@ -1,0 +1,14 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "solaris-crm",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 3100,
+      "env": {
+        "NODE_OPTIONS": "--no-network-family-autoselection --dns-result-order=ipv4first"
+      }
+    }
+  ]
+}
