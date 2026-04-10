@@ -16,7 +16,7 @@ export default function LineChartOne() {
       position: "top",
       horizontalAlign: "left",
     },
-    colors: ["#465FFF", "#9CB9FF"], // Define line colors
+    colors: ["#6366F1", "#A5B4FC"], // Define line colors
     chart: {
       fontFamily: "Outfit, sans-serif",
       height: 310,
