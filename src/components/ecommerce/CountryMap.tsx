@@ -40,7 +40,7 @@ const CountryMap: React.FC<CountryMapProps> = ({ mapColor }) => {
       markerStyle={
         {
           initial: {
-            fill: "#6366F1",
+            fill: "#06B6D4",
             r: 4, // Custom radius for markers
           }, // Type assertion to bypass strict CSS property checks
         } as MarkerStyle
@@ -52,7 +52,7 @@ const CountryMap: React.FC<CountryMapProps> = ({ mapColor }) => {
             latLng: [37.2580397, -104.657039],
             name: "United States",
             style: {
-              fill: "#6366F1",
+              fill: "#06B6D4",
               borderWidth: 1,
               borderColor: "white",
               stroke: "#383f47",
@@ -61,18 +61,18 @@ const CountryMap: React.FC<CountryMapProps> = ({ mapColor }) => {
           {
             latLng: [20.7504374, 73.7276105],
             name: "India",
-            style: { fill: "#6366F1", borderWidth: 1, borderColor: "white" },
+            style: { fill: "#06B6D4", borderWidth: 1, borderColor: "white" },
           },
           {
             latLng: [53.613, -11.6368],
             name: "United Kingdom",
-            style: { fill: "#6366F1", borderWidth: 1, borderColor: "white" },
+            style: { fill: "#06B6D4", borderWidth: 1, borderColor: "white" },
           },
           {
             latLng: [-25.0304388, 115.2092761],
             name: "Sweden",
             style: {
-              fill: "#6366F1",
+              fill: "#06B6D4",
               borderWidth: 1,
               borderColor: "white",
               strokeOpacity: 0,
@@ -97,11 +97,11 @@ const CountryMap: React.FC<CountryMapProps> = ({ mapColor }) => {
         hover: {
           fillOpacity: 0.7,
           cursor: "pointer",
-          fill: "#6366f1",
+          fill: "#06b6d4",
           stroke: "none",
         },
         selected: {
-          fill: "#6366F1",
+          fill: "#06B6D4",
         },
         selectedHover: {},
       }}

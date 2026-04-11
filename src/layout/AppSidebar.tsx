@@ -29,64 +29,66 @@ type NavItem = {
 const navItems: NavItem[] = [
   {
     icon: <GridIcon />,
-    name: "Dashboard",
-    subItems: [{ name: "Ecommerce", path: "/", pro: false }],
+    name: "Overview",
+    path: "/",
   },
   {
-    icon: <CalenderIcon />,
-    name: "Calendar",
-    path: "/calendar",
+    icon: <PieChartIcon />,
+    name: "Real-time",
+    path: "/line-chart",
   },
   {
     icon: <UserCircleIcon />,
-    name: "User Profile",
-    path: "/profile",
-  },
-
-  {
-    name: "Forms",
-    icon: <ListIcon />,
-    subItems: [{ name: "Form Elements", path: "/form-elements", pro: false }],
-  },
-  {
-    name: "Tables",
-    icon: <TableIcon />,
-    subItems: [{ name: "Basic Tables", path: "/basic-tables", pro: false }],
-  },
-  {
-    name: "Pages",
-    icon: <PageIcon />,
+    name: "Audiences",
     subItems: [
-      { name: "Blank Page", path: "/blank", pro: false },
-      { name: "404 Error", path: "/error-404", pro: false },
+      { name: "All Users", path: "/profile", pro: false },
+      { name: "Segments", path: "/avatars", pro: false },
+    ],
+  },
+  {
+    icon: <BoxCubeIcon />,
+    name: "Acquisition",
+    subItems: [
+      { name: "Channels", path: "/blank", pro: false },
+      { name: "Campaigns", path: "/buttons", pro: false },
+    ],
+  },
+  {
+    icon: <ListIcon />,
+    name: "Behavior",
+    subItems: [
+      { name: "Pages", path: "/basic-tables", pro: false },
+      { name: "Events", path: "/badge", pro: false },
+      { name: "Funnels", path: "/bar-chart", pro: false },
+    ],
+  },
+  {
+    icon: <TableIcon />,
+    name: "Conversions",
+    subItems: [
+      { name: "Goals", path: "/form-elements", pro: false },
+      { name: "Attribution", path: "/alerts", pro: false },
     ],
   },
 ];
 
 const othersItems: NavItem[] = [
   {
-    icon: <PieChartIcon />,
-    name: "Charts",
+    icon: <PageIcon />,
+    name: "Reports",
     subItems: [
-      { name: "Line Chart", path: "/line-chart", pro: false },
-      { name: "Bar Chart", path: "/bar-chart", pro: false },
+      { name: "Saved Reports", path: "/images", pro: false },
+      { name: "Exports", path: "/videos", pro: false },
     ],
   },
   {
-    icon: <BoxCubeIcon />,
-    name: "UI Elements",
-    subItems: [
-      { name: "Alerts", path: "/alerts", pro: false },
-      { name: "Avatar", path: "/avatars", pro: false },
-      { name: "Badge", path: "/badge", pro: false },
-      { name: "Buttons", path: "/buttons", pro: false },
-      { name: "Images", path: "/images", pro: false },
-      { name: "Videos", path: "/videos", pro: false },
-    ],
+    icon: <CalenderIcon />,
+    name: "Schedules",
+    path: "/calendar",
   },
   {
     icon: <PlugInIcon />,
-    name: "Authentication",
+    name: "Account",
     subItems: [
       { name: "Sign In", path: "/signin", pro: false },
       { name: "Sign Up", path: "/signup", pro: false },
@@ -311,7 +313,7 @@ const AppSidebar: React.FC = () => {
         <Link href="/" className="flex items-center gap-2">
           {isExpanded || isHovered || isMobileOpen ? (
             <span className="flex items-center gap-2">
-              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-sky-500 to-indigo-600 text-white font-bold">
+              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-cyan-500 to-teal-600 text-white font-bold">
                 S
               </span>
               <span className="text-lg font-semibold text-gray-900 dark:text-white">
@@ -319,7 +321,7 @@ const AppSidebar: React.FC = () => {
               </span>
             </span>
           ) : (
-            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-sky-500 to-indigo-600 text-white font-bold">
+            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-cyan-500 to-teal-600 text-white font-bold">
               S
             </span>
           )}
