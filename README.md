@@ -44,4 +44,4 @@ This repo deploys to GitHub Pages via GitHub Actions on every push to `main`. Th
 
 ## Credits
 
-UI scaffolding based on the open-source TailAdmin Next.js admin template, rebranded and extended for the Solaris product suite.
+Custom admin UI built on Next.js and Tailwind CSS with an extended component library.
