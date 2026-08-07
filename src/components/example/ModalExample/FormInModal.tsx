@@ -32,12 +32,12 @@ export default function FormInModal() {
           <div className="grid grid-cols-1 gap-x-6 gap-y-5 sm:grid-cols-2">
             <div className="col-span-1">
               <Label>First Name</Label>
-              <Input type="text" placeholder="Emirhan" />
+              <Input type="text" placeholder="Alex" />
             </div>
 
             <div className="col-span-1">
               <Label>Last Name</Label>
-              <Input type="text" placeholder="Boruch" />
+              <Input type="text" placeholder="Doe" />
             </div>
 
             <div className="col-span-1">
